@@ -22,7 +22,7 @@ public class Cadastro {
                 System.out.print("Digite o nome: ");
                 String nome = sc.nextLine();
                 nomes.add(nome);
-                System.out.println("Nome cadastrado com sucesso!");
+                System.out.println("Nome cadastrado com sucesso.");
 
             } else if (opcao == 2) {
                 if (nomes.isEmpty()) {
@@ -40,13 +40,13 @@ public class Cadastro {
 
                 if (nomes.contains(nome)) {
                     nomes.remove(nome);
-                    System.out.println("Nome removido com sucesso!");
+                    System.out.println("Nome removido com sucesso.");
                 } else {
                     System.out.println("Nome não encontrado.");
                 }
 
             } else if (opcao != 4) {
-                System.out.println("Opção inválida!");
+                System.out.println("Opção inválida.");
             }
 
         } while (opcao != 4);
